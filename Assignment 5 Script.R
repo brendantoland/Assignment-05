@@ -2,12 +2,6 @@ rm(list=ls(all=TRUE))
 cat("\014") 
 
 
-getwd()
-
-
-file.edit(".gitignore")
-
-
 DF <- read.csv("TotalAssetsAssignment5.csv")
 
 
@@ -40,3 +34,4 @@ DF <- fread("TotalAssetsAssignment5.csv", skip=1, sep=",",
             header=FALSE, data.table=FALSE)
 setnames(DF, colnames(header))
 rm(header)
+
